@@ -4,7 +4,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Dashboard/>
+    <BrowserRouter>
+    <Routes>
+      <Route index element={<LandingPage/>}/>
+      <Route path="Dashboard" element={<Dashboard/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
