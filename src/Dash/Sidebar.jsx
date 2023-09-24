@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import IMG from '../Asset/Logo.png'
 import {link} from '../data'
-import { NavLink } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 
 
 const Sidebar = () => {
@@ -23,7 +23,7 @@ const Sidebar = () => {
           <div className='grid justify-center bg-[#ffffff72] p-2 rounded-md '>{item.icon}</div>
           <div style={{display: open ? "block" : "none"}} className='active'>{item.name}</div>
         </NavLink>
-      ))
+      )) 
      }
      </div>
 

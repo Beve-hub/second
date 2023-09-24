@@ -1,16 +1,20 @@
-import Dashboard from "./Features/Dashboard";
-import LandingPage from "./Features/LandingPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './Features/LandingPage';
+import Board from './Dash/Board';
+import Company from './Dash/Company';
 
-function App() {
+
+const App = () => {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route index element={<LandingPage/>}/>
-      <Route path="Dashboard" element={<Dashboard/>}/>
-    </Routes>
-    </BrowserRouter>
+    <Router>
+        <Routes>
+          <Route path='/landingPage' element={<LandingPage />} />
+          <Route path='/' element={<Board/>} exact />
+          <Route path='/company' element={<Company />} />
+        </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

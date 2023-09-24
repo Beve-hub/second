@@ -3,6 +3,7 @@ import OMT from '../Asset/5.png'
 import Right from './Right'
 import React, {useState} from 'react';
 import WebcamScanner from './WebcamScanner'
+import Sidebar from './Sidebar';
 
 
 
@@ -16,10 +17,13 @@ const Board = () => {
    
 
   return (
-    <section className=' md:ml-[20rem]'>
+    <section className=''>
       <div className='md:flex'>
+        <div>
+          <Sidebar/>
+        </div>
 
-      <div className='md:gird item-start'>
+      <div className='pl-[20rem] md:gird item-start '>
           <h1 className=' font-bold text-2xl py-[3rem] flex justify-start items-start text-start'>Hi,<span>Welcome</span></h1>
           <div  className='md:h-[15rem] w-[50rem] rounded-lg bg-[--btn-color]  grid justify-center'>
           <div className='md:flex justify-between gap-10 items-center '>

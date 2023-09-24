@@ -1,12 +1,15 @@
 import React from 'react'
 import Right from './Right'
+import Sidebar from './Sidebar';
 
 const Company = () => {
   return (
-    <section className=' pl-[20rem] bg-[#2E6E65] w- h-screen'>
+    <section className='bg-[#2E6E65] w- h-screen'>
     <div className='flex'>
-
-      <div className=' w-[40rem] mt-[5rem] gap-14 grid  justify-center item-center'>
+        <div>
+          <Sidebar/>
+        </div>
+      <div className=' w-[40rem] mt-[5rem] gap-14 grid  justify-center item-center pl-[45rem]'>
         <div>
         <p className='text-xl text-white  grid justify-center items-center pl-[5rem] '>To access this session, enter your</p>
         <p className='text-xl text-white  grid justify-center items-center pl-[5rem] '> CAC Identity Number</p>

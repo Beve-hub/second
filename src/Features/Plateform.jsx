@@ -1,8 +1,8 @@
 import React from 'react'
-import Sidebar from './../Dash/Sidebar';
-import Board from './../Dash/Board';
+import Sidebar from '../Dash/Sidebar';
+import Company from '../Dash/Company';
 
-const Dashboard = () => {
+const Plateform = () => {
   return (
     <div className='w-full max-h-[100%]'>
     <div className='flex '>
@@ -10,11 +10,11 @@ const Dashboard = () => {
         <Sidebar/>
       </div>
       <div  className='flex-auto w-[50%] top-14 bg-gray-100 rounded-xl '>
-        <Board/>
+        <Company/>
       </div>
     </div>
     </div>
   )
 }
 
-export default Dashboard
+export default Plateform
