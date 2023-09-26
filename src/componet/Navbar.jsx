@@ -4,6 +4,7 @@ import { RiArrowDropUpLine, RiArrowDropDownLine } from 'react-icons/ri';
 import ICON1 from '../Asset/metamask-icon.png';
 import ICON2 from '../Asset/coinbase-logo 1.png';
 import ICON3 from '../Asset/wallet-connect-logo 1.png';
+import {useNavigate} from 'react-router-dom';
 
 
 
@@ -11,6 +12,7 @@ import ICON3 from '../Asset/wallet-connect-logo 1.png';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   
+  const navigate = useNavigate(); 
   
 
   return (
@@ -32,7 +34,7 @@ const Navbar = () => {
           </div>
          {open && (
           <div className='absolute mt-14 rounded-lg bg-[--primary-color] grid items-center p-3 border-2 border-[green]'>
-            <ul  className='grip items-center cursor-pointer ' >
+            <ul onClick={() => navigate('/')}  className='grip items-center cursor-pointer ' >
               <li className='flex items-center gap-2 text-white py-4 hover:bg-gray-800 rounded-lg'>
                 <img src={ICON1} alt='icon_img' className='w-[20px]' />
                 Metamask
